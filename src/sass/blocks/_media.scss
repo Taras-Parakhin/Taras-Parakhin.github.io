@@ -1,0 +1,308 @@
+@media (max-width: 1200px) {
+  .button {
+    &:hover {
+      box-shadow: none;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    max-width: 900px;
+    padding: 0 20px 0;
+  }
+
+  .advantages {
+    &__block {
+      width: 221px;
+    }
+    &__descr {
+      text-align: justify;
+    }
+  }
+
+  .carousel {
+    .tns-item {
+      img {
+        width: 570px;
+      }
+    }
+    .prev, .next {
+      display: none;
+    }
+    .tns-nav {
+      position:absolute;
+      bottom: -50px;
+      left: 50%;
+      transform: translateX(-50%);
+      button {
+        height: 10px;
+        border: none;
+        border-radius: 20%;
+        margin:0 30px;
+        background-color: #7a7a7a;
+      }
+      .tns-nav-active {
+        background-color: $red_color;
+      }
+    }
+  }
+
+  .title {
+    &_left {
+      font-size: 32px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    max-width: 700px;
+  }
+
+  .promo {
+    &__wrapper {
+      align-items: center;
+    }
+    &__header {
+      font-size: 38px;
+    }
+    &__subheader {
+      font-size: 20px;
+    }
+  }
+
+  .header {
+    &__logo {
+      width: 180px;
+    }
+    &__official {
+      span {
+        margin-top: 5px;
+        font-size: 17px;
+      }
+    }
+    &__phone {
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+
+  .advantages {
+    &__wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__block {
+      width: 275px;
+      &:nth-last-child(-n+2) {
+        margin-top: 30px;
+      }
+    }
+  }
+
+  .carousel {
+    .tns-item {
+      img {
+        width: 470px;
+      }
+    }
+  }
+
+  .consultation {
+    &__descr {
+      font-size: 18px;
+    }
+  }
+
+  .catalog {
+    &__tab {
+      width: 145px;
+      font-size: 14px;
+    }
+  }
+
+  .recalls {
+    &-client {
+      flex-direction: column;
+      &__img {
+        margin: 0 auto;
+      }
+      &__recall {
+        margin-top: 20px;
+      }
+      &__name {
+        text-align: center;
+      }
+      &__effort {
+        text-align: center;
+      }
+    }
+  }
+
+  .button {
+    &_small {
+      width: 140px;
+      height: 25px;
+    }
+    &_big {
+      height: 45px;
+    }
+  }
+
+  .title {
+    font-size: 28px;
+    &_left {
+      font-size: 24px;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .container {
+    padding: 0 10px 0;
+    max-width: 550px;
+  }
+
+  .promo {
+    padding-bottom: 0px;
+    &__wrapper {
+      margin-top: 60px;
+    }
+    &__header {
+      font-size: 24px;
+    }
+    &__subheader {
+      margin-top: 10px;
+      font-size: 12px;
+    }
+    &__icons {
+      width: 300px;
+    }
+    &__icon {
+      font-size: 12px;
+    }
+    &__link {
+      font-size: 12px;
+    }
+  }
+
+  .button {
+    &_big {
+      width: 250px;
+      height: 35px;
+      font-size: 14px;
+    }
+  }
+
+  .header {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    &__logo {
+      width: 100%;
+      img {
+        width: 160px;
+      }
+    }
+    &__official {
+      margin-top: 30px;
+      font-size: 10px;
+      span {
+        margin-top: 5px;
+        font-size: 14px;
+      }
+    }
+    &__phone {
+      margin-top: 30px;
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+
+  .consultation {
+    &__descr {
+      font-size: 16px;
+      margin-top: 30px;
+      text-align: center;
+    }
+  }
+
+  .carousel {
+    .tns-item {
+      img {
+        width: 270px;
+      }
+    }
+    .tns-nav {
+      button {
+        margin:0 20px;
+      }
+    }
+  }
+
+  .catalog {
+    &__tabs {
+      display: none;
+    }
+    &__selects {
+      display: block;
+      margin: 0 auto;
+      margin-top: 30px;
+      &:active {
+        outline: 0;
+      }
+    }
+    &__select {
+      background-color: #fff;
+      color: #7a7a7a;
+    }
+  }
+
+  .footer {
+    &__info {
+      width: 320px;
+      padding: 50px 10px;
+    }
+    &__addr {
+      font-size: 18px;
+    }
+  }
+
+  .modal {
+    width: 318px;
+    padding: 40px 8px;
+    &__close {
+      top: 2px;
+      right: 2px;
+    }
+  }
+
+  .button {
+    &_small {
+      width: 120px;
+      height: 20px;
+      font-size: 10px;
+    }
+    &_submit {
+      width: 250px;
+      height: 35px;
+      font-size: 14px;
+    }
+  }
+
+  .title {
+    font-size: 20px;
+    line-height: 36px;
+    &_left {
+      text-align: center;
+    }
+  }
+
+  .feed-form {
+    align-items: center;
+    input {
+      width: 250px;
+      height: 35px;
+    }
+  }
+}
